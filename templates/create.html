@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3> create </h3>
+    <!-- this novalidate is browser validation cause we want see django validation -->
+    <form action="", method="post" novalidate >
+        {% csrf_token %}
+        {{ form.as_p}}
+    <input type="submit", value="submit">
+    </form>
+{% endblock %}
